@@ -41,6 +41,18 @@ public class CourseService {
     }
 
 
+    public ArrayList<Course> searchCourses(String keyword) {
+        ArrayList<Course> result = new ArrayList<>();
+        for (Course c : courses) {
+            if (c.getCourseName().toLowerCase().contains(keyword.toLowerCase()) || c.getCourseCode().toLowerCase().contains(keyword.toLowerCase())) {
+                result.add(c);
+            }
+        }
+        return result;
+    }
+
+
+
 
 
     public ArrayList<Course> getCourseByDepartment(String departmentName){

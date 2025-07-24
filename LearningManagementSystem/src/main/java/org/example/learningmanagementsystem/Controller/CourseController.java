@@ -63,18 +63,14 @@ public class CourseController {
         }
     }
 
-
-//    @PutMapping("/assign-instructor/course/{courseCode}/instructor/{instructorId}/requester/{requesterId}")
-//    public ResponseEntity<?> assignInstructor(@PathVariable String courseCode, @PathVariable String requesterId, @PathVariable String instructorId){
-//        String assign = courseService.assignInstructor(courseCode, requesterId, instructorId);
-//        if(assign.equals("requester is not chairman")){
-//            return ResponseEntity.status(HttpStatus.FORBIDDEN).body(new ApiResponse(assign));
-//        }else if (assign.equals("instructor not found") || assign.equals("course not found")){
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse(assign));
-//        }else {
-//            return ResponseEntity.status(HttpStatus.OK).body(new ApiResponse(assign));
-//        }
-//    }
+    @GetMapping("/search/{keyword}")
+    public ResponseEntity<?> searchCourses(@PathVariable String keyword) {
+        ArrayList<Course> result = courseService.searchCourses(keyword);
+        if (result.isEmpty()) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(new ApiResponse("no course matched"));
+        }
+        return ResponseEntity.status(HttpStatus.OK).body(result);
+    }
 
 
     @GetMapping("/get/department/{departmentName}")

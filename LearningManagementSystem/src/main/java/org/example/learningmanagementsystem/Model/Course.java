@@ -15,7 +15,7 @@ public class Course {
 
     @NotBlank(message = "Course name is required")
     @Size(min = 3, max = 100, message = "Course name must be between 3 and 100 characters")
-    @Pattern(regexp = "[a-zA-Z]+", message = "course name must be chars")
+    @Pattern(regexp = "^[a-zA-Z\\s]+$", message = "course name must be chars")
     private String courseName;
 
     @NotBlank(message = "Course code is required")
