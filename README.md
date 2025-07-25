@@ -71,7 +71,7 @@ services:
 
 <hr>
 
-### Instructor
+### Instructor Model
 !<img src="Instructor.png" alt="Instructor uml" width="400"/>
 
 **postman:** https://documenter.getpostman.com/view/28194064/2sB34oCHcG  
