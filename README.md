@@ -41,7 +41,8 @@ LearningManagementSystem/
 <hr>
 
 ### Student Model
-![Student uml](Student.png)
+<img src="Student.png" alt="Student uml" width="400"/>
+
 **postman:**  https://documenter.getpostman.com/view/28194064/2sB34oCHcJ
 services:
 * **Add Student**: add new student with validation
@@ -55,7 +56,8 @@ services:
 <hr>
 
 ### Course Model
-![Course uml](Course.png)
+<img src="Course.png" alt="course uml" width="400"/>
+
 **postman**: https://documenter.getpostman.com/view/28194064/2sB34oCHXs  
 **services**:
 * **Add Course**: add new course with validation
@@ -70,7 +72,8 @@ services:
 <hr>
 
 ### Instructor
-![Instructor uml](Instructor.png)
+!<img src="Instructor.png" alt="Instructor uml" width="400"/>
+
 **postman:** https://documenter.getpostman.com/view/28194064/2sB34oCHcG  
 **services:**
 * **Add Instructor**: add new Instructor with validation
