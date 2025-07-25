@@ -41,7 +41,7 @@ LearningManagementSystem/
 <hr>
 
 ### Student Model
-<img src="Student.png" alt="Student uml" width="400"/>
+<img src="Students.png" alt="Student uml" width="400"/>
 
 **postman:**  https://documenter.getpostman.com/view/28194064/2sB34oCHcJ  
 services:
