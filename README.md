@@ -43,7 +43,7 @@ LearningManagementSystem/
 ### Student Model
 <img src="Student.png" alt="Student uml" width="400"/>
 
-**postman:**  https://documenter.getpostman.com/view/28194064/2sB34oCHcJ
+**postman:**  https://documenter.getpostman.com/view/28194064/2sB34oCHcJ  
 services:
 * **Add Student**: add new student with validation
 * **Get All Student**: show you all student in virtual database
